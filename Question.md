@@ -10,6 +10,7 @@
  - 세 수를 입력받아 세 수의 곱이 양수이면 true , 음수이면 false 반환하는 함수
  - 특정한 달을 숫자로 입력 받아 문자로 반환해주는 함수 (1 = "Jan" , 2 = "Feb")
  */
+ 
 //1번 문제
 func numFunc(firstNum: String,seconfNum: String){
     print(firstNum + seconfNum)    
