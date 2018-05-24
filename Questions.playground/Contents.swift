@@ -11,13 +11,12 @@ func harshad(harNum:Int){
         num = num/10
     }
     if harNum % sumNum == 0 {
-        print("\(harNum)는 하샤드 입니다")
-    }else if harNum % sumNum != 0 {
+        print("\(harNum)는 하샤드 수 입니다")
+    }else {
         print("\(harNum)는 하샤드 수가 아닙니다")
     }
-    return
 }
-harshad(harNum: 40)
+harshad(harNum: 24)
 
 //# 2개의 정수를 입력했을 때 그에 대한 최소공배수와 최대공약수 구하기
 //ex) Input : 6, 9   ->  Output : 18, 3
