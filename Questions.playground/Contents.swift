@@ -4,19 +4,18 @@ import UIKit
 //- 하샤드 수 : 자연수 N의 각 자릿수 숫자의 합을 구한 뒤, 그 합한 숫자로 자기 자신이 나누어 떨어지는 수
 //ex) 18의 자릿수 합은 1 + 8 = 9이고, 18은 9로 나누어 떨어지므로 하샤드 수.
 var sumNum = 0
-func harshad(harNum:Int) -> Bool{
-    var returnValue: Bool = true
+func harshad(harNum:Int){
     var num: Int = harNum
     while num > 0 {
         sumNum += num%10
         num = num/10
     }
     if harNum % sumNum == 0 {
-        returnValue = true
+        print("\(harNum)는 하샤드 입니다")
     }else if harNum % sumNum != 0 {
-        returnValue = false
+        print("\(harNum)는 하샤드 수가 아닙니다")
     }
-    return returnValue
+    return
 }
 harshad(harNum: 40)
 
