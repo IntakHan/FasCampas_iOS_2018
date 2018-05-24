@@ -23,21 +23,6 @@ harshad(harNum: 40)
 //# 2개의 정수를 입력했을 때 그에 대한 최소공배수와 최대공약수 구하기
 //ex) Input : 6, 9   ->  Output : 18, 3
 
-/*
- 파이썬 코드
- def gcdlcm(a, b):
- c, d = max(a, b), min(a, b)
- t = 1
- while t > 0:
- t = c % d
- c, d = d, t
- answer = [c, int(a*b/c)]
- 
- return answer
- print(gcdlcm(12,18))
- */
-
-
 var maxDivision = 0
 var multi = 0
 var i = 2
